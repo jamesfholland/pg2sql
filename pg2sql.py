@@ -1,3 +1,6 @@
+#Author: James Holland jholland@usgs.gov
+#License: Public Domain
+
 import sys
 import getopt
 import getpass
