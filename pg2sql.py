@@ -52,7 +52,7 @@ def main():
     folder='./'
     
     lparams = 'h:U:p:d:f:'
-    wparams = ['host=', 'username=', 'port=', 'dbname=', 'help', 'folder']
+    wparams = ['host=', 'username=', 'port=', 'dbname=', 'help', 'folder=']
     try:
         options, extras = getopt.getopt(sys.argv[1:],lparams,wparams)
     except getopt.GetoptError as err:
