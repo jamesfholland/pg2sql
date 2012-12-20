@@ -31,6 +31,7 @@ def getFunctions(database, folder):
     #db_args = (stationIDs, metricID, startDate, endDate)
     result = database.select(queries['getFunctions'])
     for fun in result:
+        print 'Writing '+fun[0]
         writeFile(fun[0]+'.sql', str(database.select(queries['getFunctionDef'], [fun[0]])[0][0]), folder)
 
 
